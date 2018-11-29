@@ -10,15 +10,7 @@ export default class Dashboard extends Component {
     this.state = {
       isLoading: false,
       city: "london",
-      weather: [],
-      cities: [
-        { city: "London", code: "london" },
-        { city: "London", code: "london" },
-        { city: "London", code: "london" },
-        { city: "London", code: "london" },
-        { city: "London", code: "london" },
-        { city: "London", code: "london" }
-      ]
+      weather: []
     };
   }
   getWeather = city => {
