@@ -1,4 +1,6 @@
 # weather-app
 Weather forecast
-npm install
-npm start
+> npm i
+> npm start
+> Public url: https://vast-ridge-59743.herokuapp.com/
+
