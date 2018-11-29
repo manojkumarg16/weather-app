@@ -26,6 +26,6 @@ app.get("/getWeather", async (req, res) => {
     }
   );
 });
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server listening on the port ${port}`);
 });
