@@ -17,9 +17,10 @@ export default class Dashboard extends Component {
     this.setState({ isLoading: true });
     request.get(
       {
-        url: `http://localhost:3002/getWeather?city=${city}&appid=${REACT_APP_API_KEY}`
+        url: `https://vast-ridge-59743.herokuapp.com/getWeather?city=${city}&appid=${REACT_APP_API_KEY}`
       },
       (error, response, body) => {
+        console.log(error, response, body);
         console.log(JSON.parse(body));
         this.setState({ isLoading: false, weather: JSON.parse(body).list });
       }
